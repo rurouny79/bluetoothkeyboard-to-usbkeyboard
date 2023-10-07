@@ -2,11 +2,11 @@
 a toy project to make blue keyboard to usb keyboard
 
 # precondition For raspberry config
-echo "dtoverlay=dwc2" | sudo tee -a /boot/config.txt
+echo "dtoverlay=dwc2" | tee -a /boot/config.txt
 
-echo "dwc2" | sudo tee -a /etc/modules
+echo "dwc2" | tee -a /etc/modules
 
-echo "libcomposite" | sudo tee -a /etc/modules
+echo "libcomposite" | tee -a /etc/modules
 
 # usage
 1. have a raspberry pi zero w h
