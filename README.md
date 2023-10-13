@@ -9,6 +9,8 @@ echo "dwc2" | tee -a /etc/modules
 echo "libcomposite" | tee -a /etc/modules
 
 # precondition for raspberry pi 4
+https://mtlynch.io/key-mime-pi/
+
 Edit /boot/config.txt and add
 
 dtoverlay=dwc2,dr_mode=host
