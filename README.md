@@ -8,6 +8,10 @@ echo "dwc2" | tee -a /etc/modules
 
 echo "libcomposite" | tee -a /etc/modules
 
+# precondition for raspberry pi 4
+Edit /boot/config.txt and add
+dtoverlay=dwc2,dr_mode=host
+
 # usage
 1. have a raspberry pi zero w h
 2. open "/etc/rc.local" and append two lines below before "exit 0"
